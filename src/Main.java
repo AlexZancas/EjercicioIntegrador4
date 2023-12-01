@@ -59,14 +59,14 @@ public class Main {
 				+ "\nstages{"
 				+ "\nstage('Mostrar Info'){"
 				+ "\nsteps{"
-				+ "\nprintln \"" ;
+				+ "\nprintln \"\"\"" ;
 		
 		for(int i=0; i<lista.size(); i++) {
 			String titulo = "Titulo: "+lista.get(i).getTitulo()+", Ganancia Bruta 2023: "+lista.get(i).getPrevisionGananciaBruta() + ", Ganancia Neta 2023: "+lista.get(i).getPrevisionGananciaNeta()+"\n";
 			text += titulo;
 		}
 		
-		text += "\"\n}\n}\n}\n}";
+		text += "\"\"\"\n}\n}\n}\n}";
 		return text;
 	}
 }
